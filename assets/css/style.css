@@ -26,6 +26,10 @@ h1 {
   position: relative;
 }
 
+h2 {
+  display: inline-block;
+}
+
 #player-score {
   margin: 0 10px 0 10px;
   color: #fff;
@@ -58,7 +62,7 @@ button {
 }
 
 /* Rules Button */
-.rules {
+.rule {
   display: inline-block;
   margin-top: 45px;
   width: 60px;
@@ -72,7 +76,4 @@ p {
   margin-top: 10px;
 }
 
-h2 {
-  display: inline-block;
-}
 

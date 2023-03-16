@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Rock Paper Scissors Lizard Spock Game</title>
-</head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock Paper Scissors Lizard Spock Game</title>
+  </head>
 <body>
 <!-- title of the game-->
   <header>
     <h1>-- Rock Paper Scissors Lizard Spock Game --</h1>
-  </header>
+  </header> 
   <br>
   <br>
 
 <!-- score area -->
-<div class="score">
-  <h2 id="player-score">Player: 0</h2>  
-  <h2 id="computer-score">Computer: 0</h2>
-</div>
+  <div class="score">
+    <h2 id="player-score">Player: 0</h2>  
+    <h2 id="computer-score">Computer: 0</h2>
+  </div>
 
-<div id="messages"></div> 
+  <div id="messages"></div> 
 
-<div class="buttons">
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissors">Scissors</button>
-  <button id="lizard">Lizard</button>
-  <button id="spock">Spock</button>
-</div>
+  <div class="game">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <button id="lizard">Lizard</button>
+    <button id="spock">Spock</button>
+  </div>
 
-<p><strong>Click a button !</strong></p>
+<!-- message for the user -->
+  <p><strong>Click a button !</strong></p>
 
 
-<button class="rules">Rules</button>
+  <button id="gameRule">Rules</button>
+  <p id="rule-text"></p>
+  
 
   <script src="assets/js/script.js"></script>
-</body>
+ </body>
 </html>
