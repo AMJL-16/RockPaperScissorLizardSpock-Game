@@ -5,22 +5,24 @@ const userChoice = document.getElementById("your-choice");
 const computerchoice = document.getElementById("machine-choice");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score"); 
-const choices = document.querySelectorAll("button"); // using the queryselectorall function to selsect all the buttons.
+const choices = document.querySelectorAll("button"); // using the querySelectorAll function to select all the buttons.
 
 let playerMove
 let computerMove
+
 /** 
-* use the for each method and addEventListeners to the buttons using
-* the arrow method to pass trough a function
+* use the array foreach() method and addEventListeners to the buttons using
+* the arrow method to pass trough a function. I learn it with the 
 */ 
 choices.forEach(choice => choice.addEventListener('click', (e) => {
   playerMove = e.target.id 
   userChoice.innerHTML = playerMove
-  generateComputerChoice()
+  machineChoice()
 }))
 
-function generateComputerChoice() {
-  let randomChoice = Math.floor(Math.random() * 4)
+//computer make a choice by using the Math.floor Math.random method.
+function machineChoice() {
+  let randomChoice = Math.floor(Math.random() * 5)
   
   if (randomChoice === 0) {
     computerMove = 'rock'
@@ -38,6 +40,13 @@ function generateComputerChoice() {
     computerMove = 'spock'
   }
   computerchoice.innerHTML = computerMove
+  console.log(randomChoice)
+}
+
+// adding a function to check who's the winner or if it's a draw
+
+function checkWinner() {
+
 }
 
 
