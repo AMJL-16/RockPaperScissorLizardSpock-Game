@@ -17,17 +17,22 @@ body{
 h1 {
   background-color: purple;
 }
-/* Score-area */
+
+h2 {
+  display: block;
+}
+
+h3 {
+  display: inline-block;
+}
+
 .score{
   width: 75%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   position: relative;
-}
-
-h2 {
-  display: inline-block;
 }
 
 #player-score {
@@ -42,10 +47,6 @@ h2 {
   font-weight: bold;
 }
 
-/* User or Computer win message */
-#message {
-  letter-spacing: 4px;
-}
 
 /* Buttons */
 button {
@@ -62,7 +63,7 @@ button {
 }
 
 /* Rules Button */
-.rule {
+#gameRule {
   display: inline-block;
   margin-top: 45px;
   width: 60px;
