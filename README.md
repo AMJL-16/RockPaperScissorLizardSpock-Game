@@ -59,7 +59,10 @@ It will help the player to remenber who wins.
 
 ## Testing 
 ### [Am I responsive](https://ui.dev/amiresponsive?url=https://amjl-16.github.io/RockPaperScissorLizardSpock-Game/)
+### HTML validator
+### CSS validator
 
+<img width="693" alt="image" src="https://user-images.githubusercontent.com/116040510/226106260-c84fb8a0-1c41-442c-8b82-9dedc8256292.png">
 
 
 
