@@ -3,21 +3,23 @@
  */
 const userChoice = document.getElementById("your-choice");
 const computerchoice = document.getElementById("machine-choice");
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score"); 
-const choices = document.querySelectorAll("button"); // using the querySelectorAll function to select all the buttons.
+const choices = document.querySelectorAll("button");// using the querySelectorAll function to select all the buttons.
+const result = document.getElementById("message"); 
 
 let playerMove
 let computerMove
-
+let message 
 /** 
-* use the array foreach() method and addEventListeners to the buttons using
-* the arrow method to pass trough a function. I learn it with the 
+* use the array foreach() method and addEventListeners  
+* with click event to the buttons using
+* the arrow method to pass trough a function, then a variable with a value 
+* of event will target the id attribute
 */ 
 choices.forEach(choice => choice.addEventListener('click', (e) => {
   playerMove = e.target.id 
   userChoice.innerHTML = playerMove
   machineChoice()
+  checkWinner()
 }))
 
 //computer make a choice by using the Math.floor Math.random method.
@@ -43,22 +45,46 @@ function machineChoice() {
   console.log(randomChoice)
 }
 
-// adding a function to check who's the winner or if it's a draw
+// adding a function to check who's the winner or if it's Even Steven
 
 function checkWinner() {
-
+  if (playerMove === computerMove) {
+    message = "Even Steven !"
+  }
+  if (playerMove === "rock" && computerMove === "paper") {
+    message = "you Lose !"
+  }
+  if (playerMove === "scissors" && computerMove === "paper") {
+    message = "You Win !"
+  }
+  if (playerMove === "rock" && computerMove === "lizard") {
+    message = "You Win !"
+  }
+  if (playerMove === "spock" && computerMove === "lizard") {
+    message = "You Lose !"
+  }
+  if (playerMove === "spock" && computerMove === "scissors") {
+    message = "You Lose !"
+  }
+  if (playerMove === "scissors" && computerMove === "lizard") {
+    message = "You Win !"
+  }
+  if (playerMove === "lizard" && computerMove === "paper") {
+    message = "You Win !" 
+  }
+  if (playerMove === "spock" && computerMove === "paper") {
+    message = "You Lose !"
+  }
+  if (playerMove === "spock" && computerMove === "rock") {
+    message = "You Win !"
+  }
+  if (playerMove === "rock" && computerMove === "scissors") { 
+    message = "You Win !"
+  }
+  if (playerMove === "paper" && computerMove === "rock") { 
+    message = "You Win !"
+  }
+  result.innerHTML = message
 }
 
 
-
-
-
-
-
-// add event listener and setTimeout() to rules button.
-/**function myFunction() {
-  document.getElementById("rule-text").innerHTML = "A Simple Way to Remember Who Wins:Scissors cut paper|Paper covers rock|Rock crushes lizard|Lizard poisons Spock|Spock smashes scissors|Scissors decapitate the lizard|Lizard eats paper|Paper disproves Spock|Spock vaporizes rock|Rock crushes scissors|";
-  setTimeout(function() {
-    document.getElementById("rule-text").style.display = "none";
-  }, 15000); // I set the timeOutfunction to 15 seconds to have the rules disappear.
-}*/
