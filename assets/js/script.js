@@ -51,26 +51,50 @@ function checkWinner() {
   if (playerMove === computerMove) {
     message = "Even Steven !"
   }
+   if (playerMove === "paper" && computerMove === "rock") {
+    message = "you Win !"
+  }
   if (playerMove === "rock" && computerMove === "paper") {
     message = "you Lose !"
   }
   if (playerMove === "scissors" && computerMove === "paper") {
     message = "You Win !"
   }
+  if (playerMove === "paper" && computerMove === "scissors") {
+    message = "you Lose !"
+  }
+  if (playerMove === "rock" && computerMove === "scissors") { 
+    message = "You Win !"
+  }
+  if (playerMove === "scissors" && computerMove === "rock") { 
+    message = "You Lose !"
+  }
   if (playerMove === "rock" && computerMove === "lizard") {
+    message = "You Win !"
+  }
+  if (playerMove === "lizard" && computerMove === "rock") {
+    message = "You Lose !"
+  }
+  if (playerMove === "lizard" && computerMove === "spock") {
     message = "You Win !"
   }
   if (playerMove === "spock" && computerMove === "lizard") {
     message = "You Lose !"
   }
-  if (playerMove === "spock" && computerMove === "scissors") {
-    message = "You Lose !"
-  }
   if (playerMove === "scissors" && computerMove === "lizard") {
     message = "You Win !"
   }
+  if (playerMove === "lizard" && computerMove === "scissors") {
+    message = "You Lose !"
+  }
   if (playerMove === "lizard" && computerMove === "paper") {
     message = "You Win !" 
+  }
+  if (playerMove === "paper" && computerMove === "lizard") {
+    message = "You Lose !" 
+  }
+  if (playerMove === "paper" && computerMove === "spock") {
+    message = "You Win !"
   }
   if (playerMove === "spock" && computerMove === "paper") {
     message = "You Lose !"
@@ -78,11 +102,8 @@ function checkWinner() {
   if (playerMove === "spock" && computerMove === "rock") {
     message = "You Win !"
   }
-  if (playerMove === "rock" && computerMove === "scissors") { 
-    message = "You Win !"
-  }
-  if (playerMove === "paper" && computerMove === "rock") { 
-    message = "You Win !"
+  if (playerMove === "rock" && computerMove === "spock") { 
+    message = "You Lose !"
   }
   result.innerHTML = message
 }
