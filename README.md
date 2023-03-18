@@ -23,6 +23,7 @@ Rock Paper Scissors Lizard Spock is a variation of Rock Paper Scissors made popu
 ##### There is 5 buttons with the name of each choice inside them (rock, paper, scissors, lizard, spock).
 by clicking it will log the player choice and then the computer will generate is choice and then you'll get the message if the player has won, lost or Even Steven.
 There is also a line of text to remind the user what to do which says 'Click a Button !'
+
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/116040510/226102101-e139f994-7ced-44b6-a5a8-05af48572c14.png">
 
 ### - Rules of the game 
