@@ -57,13 +57,32 @@ It will help the player to remenber who wins.
 ##### CSS
 ##### JAVASCRIPT
 
-## Testing 
+## Testing
+
+
+
 ### [Am I responsive](https://ui.dev/amiresponsive?url=https://amjl-16.github.io/RockPaperScissorLizardSpock-Game/)
 ### HTML validator
+
+<img width="688" alt="image" src="https://user-images.githubusercontent.com/116040510/226146356-d7eeee78-afbc-485a-8df7-5124f742b92b.png">
+
+No errors were found in HTML validator.
+
 ### CSS validator
 
 <img width="693" alt="image" src="https://user-images.githubusercontent.com/116040510/226106260-c84fb8a0-1c41-442c-8b82-9dedc8256292.png">
 
+No errors were found in CSS validator.
+
+### Lighthouse Devtools
+
+- Desktop report
+
+<img width="469" alt="lighthouse check" src="https://user-images.githubusercontent.com/116040510/226146552-3f96160f-5e58-4738-aeb5-e0278d3340a3.png">
+
+- Mobile Report 
+
+<img width="430" alt="lighthouse mobile check" src="https://user-images.githubusercontent.com/116040510/226146623-e1160dd8-924a-499b-b969-d210ac9f943b.png">
 
 
 
