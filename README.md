@@ -84,6 +84,53 @@ No errors were found in CSS validator.
 
 <img width="430" alt="lighthouse mobile check" src="https://user-images.githubusercontent.com/116040510/226146623-e1160dd8-924a-499b-b969-d210ac9f943b.png">
 
+## Bugs or warnings 
+
+when passing the js code through the jshint validator few warnings appeared saying that const is only available in 'esversion 6'
+
+so i did some research and found that i could write /* jshint esversion : 6 */ to fix that .
+I found the solution here :   https://intellij-support.jetbrains.com/ 
+
+## Deployment 
+
+The site was deployed to GitHub pages.
+The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master or main Branch
+Once the master or main branch has been selected, the page will be automatically refreshed with a detailed ribbon display
+to indicate the successful deployment.
+
+### [Live Website click here !](https://amjl-16.github.io/RockPaperScissorLizardSpock-Game/)
+
+## Credits 
+
+The layout of the game has been inspired by code institute module video showing the ultimate rock paper scissor game and
+also from tutorial which I learned a lot from like: 
+- on 'web dev simplified' 
+- on 'code with Ania Kubow' 
+- on 'freeCodeCamp'
+
+### Content 
+- I took code that I learned over the passed 3 months from html, css, and javascript essential module from code institute. 
+- I used w3schools https://www.w3schools.com/js/
+- The code template is from code institute https://github.com/
+- I learned and took the code logic for the .foreach() array method and the ES6 arrow function from Ania Kubow tutorial rock paper scissor 
+  https://www.youtube.com/watch?v=6Hb0qZ3PVWI&t=144s and https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=934s
+- I learned more about it with Florin Pop tutorials.
+- I watched a lot of javascript tutorial to get more confortable on: https://www.javascripttutorial.net/
+
+### Media 
+- The game rules are from: https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock)
+- The font family is from: https://fonts.google.com
+
+## Acknowledgement
+I would like to thank you:
+- the slack community for being so helpful.
+- my mentor Adey Adegbenga for is advice.
+
+
+
+
 
 
 
